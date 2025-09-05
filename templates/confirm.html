@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Eliminación - Gestor de Dossiers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-exclamation-triangle" style="color: #f39c12;"></i>
+                <h1>Confirmar Eliminación</h1>
+            </div>
+            <p class="subtitle">Revisa la información antes de proceder</p>
+        </header>
+
+        <main class="main-content">
+            <div class="warning-card">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h2>⚠️ ADVERTENCIA ⚠️</h2>
+                </div>
+                <p>Estás a punto de eliminar permanentemente el dossier <strong>ID: {{ dossier_id }}</strong></p>
+                <p>Esta acción <strong>NO SE PUEDE DESHACER</strong></p>
+            </div>
+
+            <div class="dossier-info-card">
+                <div class="card-header">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Información del Dossier</h3>
+                </div>
+                
+                {% if dossier_data %}
+                    <div class="dossier-summary">
+                        <p><strong>Nombre del Dossier:</strong> {{ dossier_data[0].Nombre }}</p>
+                        <p><strong>Fecha de Alta:</strong> {{ dossier_data[0].FechaAlta.strftime('%d/%m/%Y %H:%M') if dossier_data[0].FechaAlta else 'No disponible' }}</p>
+                        <p><strong>Usuario:</strong> {{ dossier_data[0].UserName }}</p>
+                        <p><strong>Total de Archivos a Eliminar:</strong> {{ dossier_data|length }}</p>
+                    </div>
+
+                    <div class="files-table">
+                        <h4><i class="fas fa-list"></i> Archivos que serán eliminados:</h4>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Archivo ID</th>
+                                        <th>Tipo</th>
+                                        <th>Usuario</th>
+                                        <th>Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in dossier_data %}
+                                    <tr>
+                                        <td>{{ item.DossierArchivoID }}</td>
+                                        <td>{{ item.Tipo }}</td>
+                                        <td>{{ item.UserName }}</td>
+                                        <td>{{ item.Cantidad }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="user-confirmation">
+                <h4><i class="fas fa-user"></i> Confirmación del Usuario</h4>
+                <form method="POST" action="{{ url_for('delete') }}" class="confirmation-form">
+                    <input type="hidden" name="dossier_id" value="{{ dossier_id }}">
+                    
+                    <div class="form-group">
+                        <label for="user_name">Tu nombre (para el registro):</label>
+                        <input 
+                            type="text" 
+                            id="user_name" 
+                            name="user_name" 
+                            placeholder="Ingresa tu nombre completo" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="confirm_deletion" required>
+                        <label for="confirm_deletion">
+                            He revisado toda la información y confirmo que deseo eliminar este dossier permanentemente
+                        </label>
+                    </div>
+
+                    <div class="button-group">
+                        <a href="{{ url_for('index') }}" class="btn-secondary">
+                            <i class="fas fa-arrow-left"></i>
+                            Cancelar
+                        </a>
+                        
+                        <button type="submit" class="btn-danger" id="delete-btn" disabled>
+                            <i class="fas fa-trash-alt"></i>
+                            ELIMINAR DOSSIER
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Global News - Desarrollado por Kevin Gómez</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación Exitosa - Gestor de Dossiers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-check-circle" style="color: #27ae60;"></i>
+                <h1>Eliminación Exitosa</h1>
+            </div>
+            <p class="subtitle">El dossier ha sido eliminado correctamente</p>
+        </header>
+
+        <main class="main-content">
+            <div class="success-card">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                
+                <h2>¡Operación Completada!</h2>
+                
+                <div class="success-details">
+                    <p><strong>Dossier ID:</strong> {{ dossier_id }}</p>
+                    <p><strong>Archivos eliminados:</strong> {{ deleted_count }}</p>
+                    <p><strong>Fecha y hora:</strong> {{ moment().format('DD/MM/YYYY HH:mm:ss') }}</p>
+                    <p><strong>Estado:</strong> <span class="status-success">Eliminado exitosamente</span></p>
+                </div>
+
+                <div class="success-info">
+                    <div class="info-item">
+                        <i class="fas fa-history"></i>
+                        <p>La operación ha sido registrada en el log del sistema</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-database"></i>
+                        <p>Los datos han sido removidos permanentemente de la base de datos</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>No se requieren acciones adicionales</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-actions">
+                <h3><i class="fas fa-forward"></i> ¿Qué hacer ahora?</h3>
+                
+                <div class="action-buttons">
+                    <a href="{{ url_for('index') }}" class="btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Eliminar otro dossier
+                    </a>
+                    
+                    <button onclick="window.print()" class="btn-secondary">
+                        <i class="fas fa-print"></i>
+                        Imprimir comprobante
+                    </button>
+                </div>
+            </div>
+
+            <div class="completion-message">
+                <div class="message-content">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h4>¡Excelente trabajo!</h4>
+                    <p>Has completado exitosamente la eliminación del dossier. El equipo de desarrollo puede continuar con sus tareas normalmente.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Global News - Desarrollado por Kevin Gómez</p>
+            <p><i class="fas fa-check" style="color: #27ae60;"></i> Operación completada exitosamente</p>
+        </footer>
+    </div>
+
+    <script>
+        // Auto-redirect después de 30 segundos
+        setTimeout(function() {
+            if (confirm('¿Deseas regresar a la página principal?')) {
+                window.location.href = "{{ url_for('index') }}";
+            }
+        }, 30000);
+
+        // Confetti animation (opcional)
+        function celebrateSuccess() {
+            // Pequeña animación de celebración
+            const successIcon = document.querySelector('.success-icon i');
+            successIcon.style.animation = 'pulse 1s ease-in-out';
+        }
+
+        // Ejecutar celebración al cargar la página
+        window.addEventListener('load', celebrateSuccess);
+    </script>
+</body>
+</html>
