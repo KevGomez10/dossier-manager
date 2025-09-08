@@ -89,12 +89,159 @@ body {
 .success-card,
 .completion-message,
 .next-actions,
-.user-confirmation {
+.user-confirmation,
+.queue-table-card,
+.no-data-card {
     background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: transform 0.3s ease;
+}
+
+.search-card:hover,
+.info-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Estilos específicos para la tabla de cola */
+.queue-table-card {
+    margin-top: 2rem;
+}
+
+.table-container {
+    padding: 0;
+}
+
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    margin: 0;
+}
+
+.queue-table th {
+    background: linear-gradient(135deg, var(--primary-color), #2980b9);
+    color: var(--white);
+    padding: 1rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.queue-table th:hover {
+    background: linear-gradient(135deg, #2980b9, var(--primary-color));
+}
+
+.queue-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.queue-row:hover {
+    background-color: #f8f9fa !important;
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+.queue-row.selected {
+    background-color: #e8f5e8 !important;
+    border-left: 4px solid var(--success-color);
+}
+
+.archivo-id-cell {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.tipo-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-copy {
+    background: var(--success-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.btn-copy:hover {
+    background: #229954;
+    transform: scale(1.1);
+}
+
+.btn-copy i {
+    font-size: 0.8rem;
+}
+
+/* No data card */
+.no-data-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-light);
+}
+
+.no-data-content i {
+    font-size: 3rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.no-data-content p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Table search input */
+.table-search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Sorting indicators */
+.queue-table th.sorted-asc::after {
+    content: ' ↑';
+    color: #fff;
+}
+
+.queue-table th.sorted-desc::after {
+    content: ' ↓';
+    color: #fff;
+}
+
+/* Form help text */
+.form-help {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--text-light);
+    font-size: 0.85rem;
 }
 
 .search-card:hover,

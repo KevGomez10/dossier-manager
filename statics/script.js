@@ -1,13 +1,170 @@
-// Gestor de Dossiers - JavaScript
+// Gestor de Dossiers - JavaScript (Versión 2.0 - DossierArchivoID)
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Gestor de Dossiers cargado correctamente');
+    console.log('🚀 Gestor de Dossiers v2.0 cargado correctamente');
     
     // Inicializar funcionalidades
     initializeFormValidation();
     initializeConfirmationPage();
     initializeFlashMessages();
     initializeAnimations();
+    initializeTableFeatures();
 });
+
+// Nueva función para funcionalidades de tabla
+function initializeTableFeatures() {
+    const queueTable = document.querySelector('.queue-table');
+    
+    if (queueTable) {
+        // Hacer filas clicables
+        const rows = queueTable.querySelectorAll('.queue-row');
+        rows.forEach(row => {
+            row.addEventListener('click', function() {
+                const archivoId = this.getAttribute('data-archivo-id');
+                copyToInput(archivoId);
+                highlightRow(this);
+            });
+            
+            // Efecto hover
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#e3f2fd';
+                this.style.cursor = 'pointer';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('selected')) {
+                    this.style.backgroundColor = '';
+                }
+            });
+        });
+        
+        // Búsqueda en tiempo real en la tabla
+        addTableSearch();
+        
+        // Ordenamiento de columnas
+        addTableSorting();
+    }
+}
+
+// Copiar ID al formulario
+function copyToInput(archivoId) {
+    const input = document.querySelector('#dossier_archivo_id');
+    if (input) {
+        input.value = archivoId;
+        input.focus();
+        
+        // Animación de éxito
+        input.style.backgroundColor = '#d4edda';
+        setTimeout(() => {
+            input.style.backgroundColor = '';
+        }, 1000);
+        
+        showAlert(`ID ${archivoId} copiado al formulario`, 'success');
+    }
+}
+
+// Resaltar fila seleccionada
+function highlightRow(row) {
+    // Remover selección anterior
+    const previousSelected = document.querySelector('.queue-row.selected');
+    if (previousSelected) {
+        previousSelected.classList.remove('selected');
+        previousSelected.style.backgroundColor = '';
+    }
+    
+    // Agregar selección a la nueva fila
+    row.classList.add('selected');
+    row.style.backgroundColor = '#e8f5e8';
+}
+
+// Agregar búsqueda en la tabla
+function addTableSearch() {
+    const tableCard = document.querySelector('.queue-table-card');
+    if (!tableCard) return;
+    
+    const searchInput = document.createElement('input');
+    searchInput.type = 'text';
+    searchInput.placeholder = '🔍 Buscar en la tabla...';
+    searchInput.className = 'table-search-input';
+    searchInput.style.cssText = `
+        width: 100%;
+        padding: 0.75rem;
+        margin: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    `;
+    
+    const tableContainer = tableCard.querySelector('.table-container');
+    tableContainer.insertBefore(searchInput, tableContainer.firstChild);
+    
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const rows = document.querySelectorAll('.queue-row');
+        
+        rows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+}
+
+// Agregar ordenamiento a las columnas
+function addTableSorting() {
+    const headers = document.querySelectorAll('.queue-table th');
+    
+    headers.forEach((header, index) => {
+        if (index < headers.length - 1) { // No agregar sort a la columna de acción
+            header.style.cursor = 'pointer';
+            header.title = 'Click para ordenar';
+            
+            header.addEventListener('click', function() {
+                sortTable(index);
+                updateSortIndicators(this);
+            });
+        }
+    });
+}
+
+// Función para ordenar tabla
+function sortTable(columnIndex) {
+    const table = document.querySelector('.queue-table');
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    
+    const isNumeric = columnIndex === 0 || columnIndex === 5 || columnIndex === 6; // ArchivoID, DossierID, Cantidad
+    
+    rows.sort((a, b) => {
+        const aText = a.cells[columnIndex].textContent.trim();
+        const bText = b.cells[columnIndex].textContent.trim();
+        
+        if (isNumeric) {
+            return parseInt(aText) - parseInt(bText);
+        } else {
+            return aText.localeCompare(bText);
+        }
+    });
+    
+    // Re-agregar filas ordenadas
+    rows.forEach(row => tbody.appendChild(row));
+}
+
+// Actualizar indicadores de ordenamiento
+function updateSortIndicators(clickedHeader) {
+    const headers = document.querySelectorAll('.queue-table th');
+    
+    // Remover indicadores previos
+    headers.forEach(header => {
+        header.classList.remove('sorted-asc', 'sorted-desc');
+    });
+    
+    // Agregar indicador al header clickeado
+    clickedHeader.classList.add('sorted-asc');
+}
 
 // Validación de formularios
 function initializeFormValidation() {

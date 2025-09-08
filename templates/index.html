@@ -35,29 +35,93 @@
             <div class="search-card">
                 <div class="card-header">
                     <i class="fas fa-search"></i>
-                    <h2>Buscar Dossier para Eliminar</h2>
+                    <h2>Eliminar Dossier Archivo</h2>
                 </div>
                 
                 <form method="POST" action="{{ url_for('search') }}" class="search-form">
                     <div class="form-group">
-                        <label for="dossier_id">ID del Dossier:</label>
+                        <label for="dossier_archivo_id">ID del Dossier Archivo:</label>
                         <input 
                             type="number" 
-                            id="dossier_id" 
-                            name="dossier_id" 
-                            placeholder="Ingresa el ID del dossier" 
+                            id="dossier_archivo_id" 
+                            name="dossier_archivo_id" 
+                            placeholder="Ingresa el DossierArchivoID de la tabla inferior" 
                             required
                             min="1"
                             class="form-input"
                         >
+                        <small class="form-help">Consulta la tabla de abajo para encontrar el ID correcto</small>
                     </div>
                     
                     <button type="submit" class="btn-primary">
                         <i class="fas fa-search"></i>
-                        Buscar Dossier
+                        Buscar Dossier Archivo
                     </button>
                 </form>
             </div>
+
+            <!-- Nueva tabla de dossiers en cola -->
+            {% if dossiers_en_cola %}
+            <div class="queue-table-card">
+                <div class="card-header">
+                    <i class="fas fa-list"></i>
+                    <h2>Dossiers en Cola ({{ dossiers_en_cola|length }} registros)</h2>
+                </div>
+                
+                <div class="table-container">
+                    <div class="table-responsive">
+                        <table class="queue-table">
+                            <thead>
+                                <tr>
+                                    <th>DossierArchivoID</th>
+                                    <th>Nombre</th>
+                                    <th>Usuario</th>
+                                    <th>Tipo</th>
+                                    <th>Fecha Alta</th>
+                                    <th>DossierID</th>
+                                    <th>Cantidad</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in dossiers_en_cola %}
+                                <tr class="queue-row" data-archivo-id="{{ item.DossierArchivoID }}">
+                                    <td class="archivo-id-cell">
+                                        <strong>{{ item.DossierArchivoID }}</strong>
+                                    </td>
+                                    <td>{{ item.Nombre }}</td>
+                                    <td>{{ item.UserName }}</td>
+                                    <td>
+                                        <span class="tipo-badge">{{ item.Tipo }}</span>
+                                    </td>
+                                    <td>{{ item.FechaAlta.strftime('%d/%m/%Y') if item.FechaAlta else 'N/A' }}</td>
+                                    <td>{{ item.DossierID }}</td>
+                                    <td>{{ item.Cantidad }}</td>
+                                    <td>
+                                        <button class="btn-copy" onclick="copyToInput('{{ item.DossierArchivoID }}')" title="Copiar ID al formulario">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="no-data-card">
+                <div class="card-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Sin datos disponibles</h3>
+                </div>
+                <div class="no-data-content">
+                    <i class="fas fa-database"></i>
+                    <p>No se pudieron cargar los dossiers en cola o no hay registros disponibles.</p>
+                    <p>Verifica la conexión a la base de datos.</p>
+                </div>
+            </div>
+            {% endif %}
 
             <div class="info-card">
                 <div class="card-header">
