@@ -20,9 +20,9 @@ logging.basicConfig(
 # Configuración de base de datos (completar con datos)
 DB_CONFIG = {
     'server': '192.168.1.210',
-    'database': '',
-    'username': 'USUARIO',
-    'password': 'ONTRASEÑA',
+    'database': '7787_GlobalnewsV2',
+    'username': 'soporte',
+    'password': 'T3cn0l0g14',
     'driver': '{ODBC Driver 17 for SQL Server}'                                                                                      # o el driver que tengas disponible
 }
 
@@ -159,4 +159,4 @@ def health():
     return jsonify({'status': 'OK', 'timestamp': datetime.now().isoformat()})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000) # Cambiar host y puerto según sea necesario
+    app.run(debug=True, host='192.168.1.174', port=5000) # Cambiar host y puerto según sea necesario
