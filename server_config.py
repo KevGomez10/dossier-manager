@@ -36,7 +36,7 @@ def setup_server_logging():
 
 # Configuración de base de datos para servidor
 SERVER_DB_CONFIG = {
-    'server': '192.168.1.139',
+    'server': '192.168.1.210',
     'database': '7787_GlobalnewsV2', 
     'username': 'soporte',
     'password': 'T3cn0l0g14',
