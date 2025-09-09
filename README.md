@@ -241,10 +241,9 @@ graph TD
 **Kevin Gómez**
 - 🎓 Estudiante de Ingeniería de Software (5to semestre)
 - 💼 Practicante en Global News
-- 🌟 Especialización en Inteligencia Artificial (en desarrollo)
-- 📧 Email: [tu-email@ejemplo.com]
-- 💼 LinkedIn: [tu-linkedin]
-- 🐙 GitHub: [tu-github]
+- 🌟 Interes en Inteligencia Artificial (en desarrollo)
+- 📧 Email: [kevingo2806@gmail.com]
+- 🐙 GitHub: [KevGomez10]
 
 ## 🤝 Contribuciones
 
@@ -263,7 +262,7 @@ Este proyecto es propiedad de Global News y fue desarrollado como parte de las p
 ## 🙏 Agradecimientos
 
 - **Equipo de Global News** por la oportunidad y confianza
-- **Jefa de desarrollo** por identificar esta necesidad
+- **Jefa de desarrollo** por identificar esta necesidad Dayana Parra
 - **Claude (Anthropic)** por la asistencia en el desarrollo
 - **Comunidad de desarrolladores** por las mejores prácticas implementadas
 
