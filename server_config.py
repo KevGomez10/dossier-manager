@@ -92,7 +92,7 @@ def show_server_info():
     print("GESTOR DE DOSSIERS - GLOBAL NEWS")
     print("="*60)
     print(f"Servidor: {SERVER_CONFIG['host']}:{SERVER_CONFIG['port']}")
-    print(f"URL de acceso: http://192.168.1.139:{SERVER_CONFIG['port']}")
+    print(f"URL de acceso: http://:{SERVER_CONFIG['port']}")
     print(f"Directorio de logs: ./logs/")
     print(f"Iniciado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*60)
