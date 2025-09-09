@@ -172,74 +172,142 @@
   ('templates\\index.html',
    'C:\\Users\\Kevin Gomez\\Documents\\dossier-manager\\templates\\index.html',
    'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
+   'DATA'),
   ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
    'DATA'),
   ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
    'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
-   'DATA'),
   ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
    'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
+   'DATA'),
   ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
    'DATA'),
   ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
    'ipsum.txt',
    'DATA'),
-  ('MarkupSafe-3.0.2.dist-info\\WHEEL',
+  ('flask-2.3.3.dist-info\\REQUESTED',
    'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\WHEEL',
-   'DATA'),
-  ('werkzeug-3.1.3.dist-info\\METADATA',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\METADATA',
-   'DATA'),
-  ('click-8.2.1.dist-info\\licenses\\LICENSE.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\licenses\\LICENSE.txt',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\RECORD',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
-   'DATA'),
-  ('flask-2.3.3.dist-info\\entry_points.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\entry_points.txt',
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\REQUESTED',
    'DATA'),
   ('click-8.2.1.dist-info\\RECORD',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\RECORD',
    'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\INSTALLER',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\METADATA',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.2.1.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\WHEEL',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\LICENSE.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\WHEEL',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('click-8.2.1.dist-info\\INSTALLER',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\INSTALLER',
+   'DATA'),
   ('MarkupSafe-3.0.2.dist-info\\RECORD',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.2.1.dist-info\\METADATA',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\RECORD',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\RECORD',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\INSTALLER',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\LICENSE.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('click-8.2.1.dist-info\\WHEEL',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\WHEEL',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\top_level.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\top_level.txt',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\entry_points.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\RECORD',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\RECORD',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\WHEEL',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\METADATA',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\METADATA',
    'DATA'),
   ('itsdangerous-2.2.0.dist-info\\METADATA',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
    'DATA'),
-  ('flask-2.3.3.dist-info\\INSTALLER',
+  ('itsdangerous-2.2.0.dist-info\\RECORD',
    'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\INSTALLER',
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\LICENSE.rst',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\LICENSE.rst',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\WHEEL',
+   'C:\\Users\\Kevin '
+   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\WHEEL',
    'DATA'),
   ('werkzeug-3.1.3.dist-info\\INSTALLER',
    'C:\\Users\\Kevin '
@@ -248,74 +316,6 @@
   ('MarkupSafe-3.0.2.dist-info\\METADATA',
    'C:\\Users\\Kevin '
    'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\METADATA',
-   'DATA'),
-  ('MarkupSafe-3.0.2.dist-info\\LICENSE.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\INSTALLER',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('flask-2.3.3.dist-info\\METADATA',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\METADATA',
-   'DATA'),
-  ('flask-2.3.3.dist-info\\LICENSE.rst',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\LICENSE.rst',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('flask-2.3.3.dist-info\\REQUESTED',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\REQUESTED',
-   'DATA'),
-  ('flask-2.3.3.dist-info\\WHEEL',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\WHEEL',
-   'DATA'),
-  ('click-8.2.1.dist-info\\WHEEL',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\WHEEL',
-   'DATA'),
-  ('click-8.2.1.dist-info\\METADATA',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\METADATA',
-   'DATA'),
-  ('MarkupSafe-3.0.2.dist-info\\INSTALLER',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\INSTALLER',
-   'DATA'),
-  ('click-8.2.1.dist-info\\INSTALLER',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\click-8.2.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('MarkupSafe-3.0.2.dist-info\\top_level.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\MarkupSafe-3.0.2.dist-info\\top_level.txt',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\WHEEL',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
-   'DATA'),
-  ('werkzeug-3.1.3.dist-info\\LICENSE.txt',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('werkzeug-3.1.3.dist-info\\RECORD',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\RECORD',
-   'DATA'),
-  ('werkzeug-3.1.3.dist-info\\WHEEL',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\werkzeug-3.1.3.dist-info\\WHEEL',
-   'DATA'),
-  ('flask-2.3.3.dist-info\\RECORD',
-   'C:\\Users\\Kevin '
-   'Gomez\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\flask-2.3.3.dist-info\\RECORD',
    'DATA'),
   ('base_library.zip',
    'C:\\Users\\Kevin '

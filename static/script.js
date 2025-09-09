@@ -173,18 +173,20 @@ function initializeFormValidation() {
     
     // Validación del formulario de búsqueda
     if (searchForm) {
-        const dossierInput = searchForm.querySelector('#dossier_id');
+        const dossierInput = searchForm.querySelector('#dossier_archivo_id'); // ← CORREGIDO
         
-        dossierInput.addEventListener('input', function() {
-            validateDossierInput(this);
-        });
-        
-        searchForm.addEventListener('submit', function(e) {
-            if (!validateDossierInput(dossierInput)) {
-                e.preventDefault();
-                showAlert('Por favor ingresa un ID de dossier válido', 'error');
-            }
-        });
+        if (dossierInput) {
+            dossierInput.addEventListener('input', function() {
+                validateDossierInput(this);
+            });
+            
+            searchForm.addEventListener('submit', function(e) {
+                if (!validateDossierInput(dossierInput)) {
+                    e.preventDefault();
+                    showAlert('Por favor ingresa un ID de dossier archivo válido', 'error');
+                }
+            });
+        }
     }
     
     // Validación del formulario de confirmación
