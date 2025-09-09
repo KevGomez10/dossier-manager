@@ -264,14 +264,14 @@ if __name__ == '__main__':
     if not os.path.exists('logs'):
         os.makedirs('logs')
     
-    print("🚀 Iniciando Gestor de Dossiers - Global News")
-    print("📊 Puerto: 5000")
-    print("🌐 Acceso: http://IP_DEL_SERVIDOR:5000") #importante escoger la ruta del servidor y escoger que puerto vamos a utilizar 
-    print("📝 Logs: ./logs/dossier_operations.log")
+    print("Iniciando Gestor de Dossiers - Global News")
+    print("Puerto: 5000")
+    print("Acceso: http://192.168.1.139:5000") #importante escoger la ruta del servidor y escoger que puerto vamos a utilizar 
+    print("Logs: ./logs/dossier_operations.log")
     print("=" * 50)
     
     # Ejecutar en modo producción
-    app.run(debug=False, host='0.0.0.0', port=5000, threaded=True) #ip del servidor y puerto
+    app.run(debug=False, host='192.168.1.139', port=5000, threaded=True) #ip del servidor y puerto
 
     """
     importante escoger el servidor que vamos a escoger

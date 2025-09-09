@@ -29,17 +29,17 @@ def setup_server_logging():
     
     # Log inicial
     logging.info("=" * 60)
-    logging.info("🚀 GESTOR DE DOSSIERS - GLOBAL NEWS INICIADO")
-    logging.info(f"📅 Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    logging.info(f"📝 Log file: {log_filename}")
+    logging.info("GESTOR DE DOSSIERS - GLOBAL NEWS INICIADO")
+    logging.info(f"Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    logging.info(f"Log file: {log_filename}")
     logging.info("=" * 60)
 
 # Configuración de base de datos para servidor
 SERVER_DB_CONFIG = {
-    'server': 'TU_SERVIDOR_AQUI',
-    'database': 'TU_BASE_DE_DATOS_AQUI', 
-    'username': 'TU_USUARIO_AQUI',
-    'password': 'TU_CONTRASEÑA_AQUI',
+    'server': '192.168.1.139',
+    'database': '7787_GlobalnewsV2', 
+    'username': 'soporte',
+    'password': 'T3cn0l0g14',
     'driver': '{ODBC Driver 17 for SQL Server}',
     'timeout': 30,  # Timeout de conexión
     'autocommit': True
@@ -56,7 +56,7 @@ SERVER_CONFIG = {
 
 # Configuración de seguridad
 SECURITY_CONFIG = {
-    'secret_key': 'global-news-dossier-manager-2024-production-key',  # Cambiar por una clave más segura
+    'secret_key': 'global-news-dossier-manager-2025-production-key',  # Cambiar por una clave más segura
     'max_content_length': 16 * 1024 * 1024,  # 16MB max
     'permanent_session_lifetime': 3600  # 1 hora de sesión
 }
@@ -89,12 +89,12 @@ def health_check():
 def show_server_info():
     """Mostrar información importante del servidor"""
     print("\n" + "="*60)
-    print("🏢 GESTOR DE DOSSIERS - GLOBAL NEWS")
+    print("GESTOR DE DOSSIERS - GLOBAL NEWS")
     print("="*60)
-    print(f"🖥️  Servidor: {SERVER_CONFIG['host']}:{SERVER_CONFIG['port']}")
-    print(f"🌐 URL de acceso: http://IP_DEL_SERVIDOR:{SERVER_CONFIG['port']}")
-    print(f"📝 Directorio de logs: ./logs/")
-    print(f"🕐 Iniciado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Servidor: {SERVER_CONFIG['host']}:{SERVER_CONFIG['port']}")
+    print(f"URL de acceso: http://192.168.1.139:{SERVER_CONFIG['port']}")
+    print(f"Directorio de logs: ./logs/")
+    print(f"Iniciado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*60)
     print("📋 INSTRUCCIONES:")
     print("   1. Configura la BD en SERVER_DB_CONFIG")

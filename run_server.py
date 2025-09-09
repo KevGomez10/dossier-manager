@@ -49,7 +49,7 @@ try:
 
 except ImportError as e:
     print(f"Error de importación: {str(e)}")
-    print("📝 Asegúrate de que todos los archivos estén en el mismo directorio")
+    print("Asegúrate de que todos los archivos estén en el mismo directorio")
     input("Presiona Enter para continuar...")
 except Exception as e:
     print(f"Error inesperado: {str(e)}")
