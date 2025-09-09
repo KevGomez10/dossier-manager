@@ -257,4 +257,23 @@ def health():
     return jsonify({'status': 'OK', 'timestamp': datetime.now().isoformat()})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='192.168.1.174', port=5000)
+    # Configuración para producción en servidor
+    import os
+    
+    # Crear carpeta de logs si no existe
+    if not os.path.exists('logs'):
+        os.makedirs('logs')
+    
+    print("🚀 Iniciando Gestor de Dossiers - Global News")
+    print("📊 Puerto: 5000")
+    print("🌐 Acceso: http://IP_DEL_SERVIDOR:5000") #importante escoger la ruta del servidor y escoger que puerto vamos a utilizar 
+    print("📝 Logs: ./logs/dossier_operations.log")
+    print("=" * 50)
+    
+    # Ejecutar en modo producción
+    app.run(debug=False, host='0.0.0.0', port=5000, threaded=True) #ip del servidor y puerto
+
+    """
+    importante escoger el servidor que vamos a escoger
+    
+    """
